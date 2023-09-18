@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+
+    html {
+        font-size: 14px;
+        color: black;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 20px;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    .navbar a {
+        color: #000;
+        font-size: 1.2rem;
+        transition: all .3s;
+    }
+
+    .navbar a:hover {
+        color: #938858;
+    }
+
+    .banner {
+        margin-top: 5px;
+        width: 100%;
+        height: 200px;
+        background-image: url("./banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-content {
+        margin-top: 1rem;
+        padding: 2rem;
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .main-content > div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main-content .left {
+        width: 80%;
+    }
+
+    .main-content div.about {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-content > div h2 {
+        color: sienna;
+        text-transform: uppercase;
+    }
+
+    .contact {
+        margin-top: 1rem;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact .contact-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        color: #9b9b9b;
+    }
+    .footer .right {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .footer .right p {
+        position: relative;
+    }
+
+    .footer .right p:not(:last-child)::after {
+        content: "-";
+        position: absolute;
+        right: calc(-2rem / 3);
+    }
+</style>
+<body>
+<header>
+    <div class="navbar">
+        <div><a href="#About">About</a></div>
+        <div><a href="#Service">Services</a></div>
+        <div><a href="#Portfolio">Portfolio</a></div>
+        <div><a href="#Contact">Contact Us</a></div>
+    </div>
+    <hr>
+</header>
+<div class="banner">
+</div>
+<div class="main-content">
+    <div class="left">
+        <div class="about"><h2>ABOUT</h2>
+            <p><b>EnlightenDesign</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quo, sint.
+                Ducimus,
+                incidunt magni molestiae molestias nemo obcaecati quod tenetur vero voluptate voluptatibus!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aspernatur facilis fuga ipsum nostrum
+                nulla
+                ut
+                veniam voluptas voluptate voluptatum. Blanditiis commodi consequuntur, debitis ex facilis itaque
+                mollitia
+                nam
+                ratione tempore voluptates. Animi at consectetur est, libero odio sed. Animi.</p></div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-item">
+                <p>Phone: </p>
+                <p>(09)12123123</p>
+            </div>
+            <div class="contact-item">
+                <p>Fax: </p>
+                <p>(43)34234233</p>
+            </div>
+            <div class="contact-item">
+                <p>Email:</p>
+                <p>admin@dfasdf.com</p>
+
+            </div>
+            <div class="contact-item">
+                <p>P.O Box</p>
+                <p>133423,ABC street</p>
+            </div>
+            <div class="more"><p><a>More contact info</a></p></div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <h2>FEATURE PROJECTS</h2>
+        <p><b>The NewZeland National Party</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi error
+            laborum magni molestiae natus omnis soluta sunt unde. Amet animi aut consequuntur, culpa cupiditate
+            distinctio eius facere, fuga fugit in ipsam nemo odit omnis quaerat quasi, ratione recusandae tenetur totam.
+        </p>
+        <p><b>Green Set</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut beatae consectetur deleniti
+            dolorem esse eveniet maiores nemo odio perferendis perspiciatis possimus quia recusandae reiciendis
+            similique tenetur ut vel!</p>
+        <p><b>Nutrition Care</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet asperiores
+            cupiditate, earum ipsa ipsam minus molestiae mollitia quo recusandae?</p>
+    </div>
+</div>
+<footer>
+    <hr>
+    <div class="footer">
+        <div class="left">
+            <p>Copyright &copy; Enlighten Designs</p>
+            <p>Powered by  Enlighten Hosting and Vadmin 3.0</p>
+        </div>
+        <div class="right">
+            <p>About</p>
+            <p>Services</p>
+            <p>Portfolio</p>
+            <p>Contact Us</p>
+            <p>Terms of Trade</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

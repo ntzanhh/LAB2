@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        background-color: #efd3d3;
+        align-items: center;
+    }
+
+    .header {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: sienna;
+    }
+
+    .main {
+        display: flex;
+        height: calc(100vh - 70px - 100px - 80px);
+    }
+
+    .main .content {
+        width: 70%;
+        background-color: #5ac55a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .sidebar {
+        width: 30%;
+        background-color: burlywood;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+<header>
+    <div class="title">MAIN MENU</div>
+</header>
+<div class="header">
+    <div class="title">HEADER</div>
+</div>
+<div class="main">
+    <div class="content">
+        <div class="title">CONTENT</div>
+    </div>
+    <div class="sidebar">
+        <div class="title">SIDE BAR</div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="title">FOOTER</div>
+    </div>
+</footer>
+</body>
+</html>
